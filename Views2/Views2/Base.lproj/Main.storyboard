@@ -81,6 +81,11 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fiG-O0-WCj" appends="YES" id="5go-w5-zAe"/>
+                                    <outletCollection property="gestureRecognizers" destination="swY-ie-vod" appends="YES" id="mMY-jg-m8U"/>
+                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-Yu-JXg">
                                 <rect key="frame" x="31" y="556" width="313" height="55"/>
@@ -122,6 +127,11 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aQR-DW-SjK" appends="YES" id="LG4-Mi-nhr"/>
+                                    <outletCollection property="gestureRecognizers" destination="aVA-0G-eal" appends="YES" id="WGH-gM-sgn"/>
+                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvO-Gh-o4R">
                                 <rect key="frame" x="31" y="494" width="313" height="30"/>
@@ -145,6 +155,30 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="fiG-O0-WCj">
+                    <connections>
+                        <action selector="handlePinchWithRecognizer:" destination="BYZ-38-t0r" id="LKM-NE-nw8"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="7Ac-ec-4fc"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="aQR-DW-SjK">
+                    <connections>
+                        <action selector="handlePinchWithRecognizer:" destination="BYZ-38-t0r" id="aQ8-r5-afB"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="pyb-gi-qk1"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="swY-ie-vod">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="BYZ-38-t0r" id="cpP-2O-8aA"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="Zbd-8P-oud"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="aVA-0G-eal">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="BYZ-38-t0r" id="VcK-La-Fdp"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="PkI-T0-Pgu"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1076" y="132.68365817091455"/>
         </scene>

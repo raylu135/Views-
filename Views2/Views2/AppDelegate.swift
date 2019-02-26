@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Views2
 //
-//  Created by Federica Benacquista on 21/02/2019.
-//  Copyright © 2019 Federica. All rights reserved.
+//  Created by raylu on 21/02/2019.
+//  Copyright © 2019 raylu. All rights reserved.
 //
 
 import UIKit

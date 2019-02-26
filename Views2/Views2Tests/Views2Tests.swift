@@ -2,8 +2,8 @@
 //  Views2Tests.swift
 //  Views2Tests
 //
-//  Created by Federica Benacquista on 21/02/2019.
-//  Copyright © 2019 Federica. All rights reserved.
+//  Created by raylu raylu on 21/02/2019.
+//  Copyright © 2019 raylu. All rights reserved.
 //
 
 import XCTest
